@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- mobile section -->
+        <div class="burger" onclick="mobileToggle('1')">
+            <i class="fa fa-bars" aria-hidden="true" style="color: #fff; font-size: 1.5rem;"></i>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <div class="cross" id="cross" onclick="mobileToggle('0')">
+                <i class="fa fa-times" aria-hidden="true"
+                    style="padding: .5em .5em; color: #121212; font-size: 1.5rem; cursor: pointer;">
+                </i>
+            </div>
+            <div>
+                <div class="profile-info">
+                    <div class="avatar">
+                        <img src="images/SAVE_20210516_015952(1).jpg" alt="avatar" height="200" width="270">
+                    </div>
+                    <div class="info">
+                        <h2>Musab Momin</h2>
+                        <h4>Web Developer/Java Developer</h4>
+                    </div>
+                </div>
+                <div class="mobile-pages" id="mobilePages">
+                    <ul>
+                        <li>
+                            <button onclick="homeFun('1')" class="navagation" data-tooltip='Home'>
+                            Home
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="aboutFun('1')" class="navagation" data-tooltip='Home'>
+                            About
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="skillFun('1')" class="navagation" data-tooltip='Home'>
+                            Skills
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="projectFun('1')" class="navagation" data-tooltip='Home'>
+                            Projects
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="contactFun('1')" class="navagation" data-tooltip='Home'>
+                            Contact
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.linkedin.com/in/musab-momin-976885214/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tramsy/" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="resume" id="resume">
+                    <a href="resume/resume.htm" class="btn" target="_blank">Download CV</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- mobile section end's -->
+
+        <div class="nav-bar">
+            <ul>
+                <li>
+                    <button onclick="homeFun()" class="navagation" data-tooltip='Home'>
+                        <i class="fa fa-home" aria-hidden="true" style="font-size: 2rem; margin-bottom: 1em;"></i>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="aboutFun()" class="navagation" data-tooltip='About'>
+                        <i class="fa fa-user" aria-hidden="true" style="font-size: 2rem; margin-bottom: 1em;"></i>
+
+                    </button>
+                </li>
+                <li>
+                    <button onclick="skillFun()" class="navagation" data-tooltip='Skills'>
+                        <i class="fa fa-bolt" aria-hidden="true" style="font-size: 2rem; margin-bottom: 1em;"></i>
+                    </button>
+                </li>
+                <li>
+                    <button onclick="projectFun()" class="navagation" data-tooltip='Projects'>
+                        <i class="fa fa-briefcase" aria-hidden="true" style="font-size: 2rem; margin-bottom: 1em;"></i>
+
+                    </button>
+                </li>
+                <li>
+                    <button onclick="contactFun()" class="navagation" data-tooltip='Contact'>
+                        <i class="fa fa-envelope" aria-hidden="true" style="font-size: 2rem; margin-bottom: 1em;"></i>
+
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <div class="profile">
+            <div class="profile-info">
+                <div class="avatar">
+                    <img src="images/SAVE_20210516_015952(1).jpg" alt="avatar" height="200" width="270">
+                </div>
+                <div class="info" id="info">
+                    <h2>Musab Momin</h2>
+                    <h4>Web Developer/Java Developer</h4>
+                </div>
+                <div class="social">
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://www.linkedin.com/in/musab-momin-976885214/" target="_blank"><i
+                                    class="fa fa-linkedin" aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tramsy/" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true" style="font-size: 1.5rem;"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="resume">
+                    <a href="resume/resume.htm" class="btn" target="_blank">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <section class="content" id="home">
+            <div class="common">
+                <h1>Musab Momin</h1>
+                <div class="wrapper">
+                    <div class="static-txt">I'm a</div>
+                    <ul class="dynamic-txt">
+                        <li><span>Web-Developer</span></li>
+                        <li><span>Java-Developer</span></li>
+                        <li><span>Freelancer</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="about">
+            <div class="about-container">
+                <h1>About <span>Me</span></h1>
+            </div>
+            <div class="about-me">
+                <div class="para">
+                    <p>
+                        Hi there my name is Musab Momin I am hard a working college student I completed my graduation in
+                        <b>Computer Science</b> in 2021 during my college years i did several certification courses like
+                        java, python, javascript, Linux and couple off more.
+                        I work on my web developing skills now I think I am skillful in both end's of web. I have a good
+                        command in HTML5, CSS and javascript and React.js for backend i learned Springboot and Django
+                        knowing the technologies is not enough to make my self a team player i explore git and github .I
+                        also spend my time on cloud by playing with dockers and other cloud things.
+                    </p>
+                </div>
+                <div class="general-info">
+                    <ul>
+                        <li><span>Age </span>21</li>
+                        <li><span>Residence </span>India</li>
+                        <li><span>Address </span>Kurla(East) Mumbai-400024</li>
+                        <li><span>e-mail </span>mominmusab127@gmail.com</li>
+                        <li><span>Phone </span>+91 9324709082</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="skills">
+            <div class="certificate">
+                <h1>Certificates</h1>
+            </div>
+            <div class="certificate-pdf">
+                <div class="card">
+                    <div class="card-head">
+                        <img src="images/java-logo-black-and-white-1.png" alt="java" width="100" height="100">
+                    </div>
+                    <hr style="color: #e5e5e5;">
+                    <div class="card-body">
+                        <a href="Ceritificates/LUJV0920A0797.pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="images/93006_logo_512x512.png" alt="python" width="100" height="100">
+                    </div>
+                    <hr style="color: #e5e5e5;">
+                    <div class="card-body">
+                        <a href="Ceritificates/LUPY0420A2301(1).pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="images/js.png" alt="javascript" width="150" height="150">
+                    </div>
+                    <hr style="color: #e5e5e5;">
+                    <div class="card-body">
+                        <a href="Ceritificates/LUJS0720A0089.pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="images/block.jpg" alt="blockchain" width="150" height="150">
+                    </div>
+                    <hr style="color: #e5e5e5;">
+                    <div class="card-body">
+                        <a href="Ceritificates/LUBL0720A0369.pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="content" id="project">
+            <div class="project-container">
+                <div class="project">
+                    <h2>VE-Portal</h2>
+                    <p>
+                        Virtual Exam Portal was my final year project i made it by my self it's a solo project. The main
+                        porpose of this is providing a free examination software. <br>
+                        When a user visit on site He/She must be first register them self a user can register as a
+                        <b>Teacher</b> or as a <b>Student</b> if user register as a teacher He/she get's a 13 character
+                        unique key and by using this key while registration other user who register as a student will
+                        able to connect with that user/teacher
+                        as a teacher user can create exam of any number of subject and add as much as questions he wants
+                        in perticular subject with time limit. All the assosiated students details will present on
+                        Teacher's dashboard and on other hand student can see all exams created by there teacher they
+                        can give exam only once..
+                        <br><br><b>FRONT END:</b> HTML5, CSS and JavaScript
+                        <br><b>Back END:</b> SpringBoot, Thymleaf (as a templet engine)
+                        <br><b>DataBase:</b> MySQL
+                        <br><b>Link: </b> <a href="https://github.com/tramsy/Exam-portal.git" target="_blank">check this
+                            out</a>
+                    </p>
+                </div>
+                <hr style="color: #e5e5e5;">
+                <div class="project">
+                    <h2>MediaSolutions</h2>
+                    <p>
+                        It's a Django based web application. I created this for solving media problem like changing
+                        extension of image/videos compressing the image size making pdf of images and etc.
+                        It's free web app all you need is to visit the site and upload your image/video and then select
+                        the opration which you want to perform you can change extension of your file, comparese it and
+                        you can make pdf of your file.
+                        without registration.
+                        <br><br><b>FRONT END: </b> HTML5, CSS and JavaScript
+                        <br><b>Back END: </b> Django
+                        <br><b>DataBase: </b> SQLite
+                        <br><b>Link: </b> <a href="https://github.com/tramsy/MediaSolutions.git" target="_blank">check
+                            this out</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="contact">
+            <div class="title">
+                <h2>Say <span>Hello</span></h2>
+            </div>
+            <form action="">
+                <div class="row">
+                    <input type="text" name="" id="" placeholder="First name">
+                    <input type="text" name="" id="" placeholder="Last name">
+                </div>
+                <div class="row">
+                    <input type="email" name="" id="" placeholder="Email Address">
+                    <input type="text" name="" id="" placeholder="Mobile no.">
+                </div>
+                <div class="row2">
+                    <textarea name="" id="" placeholder="Enter mesaage"></textarea>
+                </div>
+                <div class="row2">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
