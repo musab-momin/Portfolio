@@ -18,8 +18,6 @@ window.onload = ()=>
     contact.style.display = 'none'
     project.style.display = 'none'
     skills.style.display = 'none'
-
-
     java.style.display = 'none'
 
 }
