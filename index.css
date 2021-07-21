@@ -225,7 +225,6 @@ body, html
     align-items: center;
     text-align: center;
     width: 90%;
-    /* border: 2px solid crimson; */
 }
 .resume a
 {
@@ -560,7 +559,6 @@ body, html
     align-items: center;
     margin: 4em auto;
     animation: active 1s ease-in-out;
-    overflow: auto;
 }
 
 .content#contact .title h2
@@ -615,6 +613,7 @@ body, html
     width: 100%;
     resize: none;
     height: 200px;
+    font-size: 1rem;
 
 }
 
@@ -623,7 +622,6 @@ body, html
 {
     background: var(--maincolor);
     color: #fff;
-    margin-bottom: .5em;
     padding: 0.625rem 1.875rem;
     display: inline-block;
     font-weight: 500;
