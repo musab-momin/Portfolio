@@ -110,3 +110,9 @@ const mobileToggle = (event)=>
         mobileNav.style.width = '0px';
     }
 }
+
+//fomr submission
+const sender = ()=>
+{
+    alert('Message sent...!')
+}
