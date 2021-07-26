@@ -28,6 +28,13 @@ gulp.task('optimizeImages', ()=>
 });
 
 
+gulp.task('otherFolderLoader', ()=>
+{
+    return gulp.src(['./app/resume/**/*', './app/Ceritificates/**/*'], {base: './app/'})
+    .pipe(gulp.dest('./docs'))
+});
+
+
 gulp.task('usemin', ()=>
 {
     return gulp.src('./app/index.html')
@@ -39,4 +46,4 @@ gulp.task('usemin', ()=>
 });
 
 
-gulp.task('build', gulp.series('deleteDocsFolder', 'optimizeImages', 'usemin'));
+gulp.task('build', gulp.series('deleteDocsFolder', 'otherFolderLoader', 'optimizeImages', 'usemin'));
