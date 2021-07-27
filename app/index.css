@@ -58,10 +58,9 @@ body, html
     flex-direction: column;
     background: var(--maincolor);
     z-index: 1000;
-    transition: .1s width ease-in;
+    transition: .2s width ease-in;
     display: none;
 }
-
 
 .mobile-pages
 {
@@ -654,7 +653,7 @@ body, html
 {
     from
     {
-        background: rgba(0, 0, 0, 0.05);
+        background: rgba(0, 0, 0, 0.9);
         transform: translateY(400px) perspective(600px) rotateX(-90deg);
         opacity: .5;
     }
@@ -672,7 +671,7 @@ body, html
 {
     from
     {
-        background: rgba(0, 0, 0, 0.05);
+        background: rgba(0, 0, 0, 0.9);
         transform: translateY(400px) perspective(600px) rotateX(90deg);
         opacity: .5;
     }
