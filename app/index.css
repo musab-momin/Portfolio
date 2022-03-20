@@ -19,7 +19,9 @@ body, html
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
-
+hr{
+    margin: 1.5em 0;
+}
 
 
 .container
